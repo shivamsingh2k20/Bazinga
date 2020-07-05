@@ -16,13 +16,13 @@ public class Product {
 
     private Double price;
 
-    private Long quantity;
+    private String description;
 
-    public Product(Long id, @NotNull(message = "Product name is required.") String name, Double price, Long quantity) {
+    public Product(Long id, @NotNull(message = "Product name is required.") String name, Double price, String description) {
         this.id = id;
         this.name = name;
         this.price = price;
-        this.quantity = quantity;
+        this.description = description;
     }
 
     public Product() {
@@ -52,11 +52,11 @@ public class Product {
         this.price = price;
     }
 
-    public Long getQuantity() {
-        return quantity;
+    public String getDescription() {
+        return description;
     }
 
-    public void setQuantity(Long quantity) {
-        this.quantity = quantity;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

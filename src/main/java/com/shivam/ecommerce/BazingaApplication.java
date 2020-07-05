@@ -18,11 +18,11 @@ public class BazingaApplication {
 	@Bean
     CommandLineRunner runner(ProductService productService) {
         return args -> {
-            productService.save(new Product(1L, "N-95 Mask", 800.00,1000L));
-            productService.save(new Product(2L, "PPE Kit", 2000.00,500L));
-            productService.save(new Product(3L, "Washable Mask", 100.00,2000L));
-            productService.save(new Product(4L, "Sanitizer", 150.00, 500L));
-            productService.save(new Product(5L, "Handwash", 100.00,5000L));
+            productService.save(new Product(1L, "N-95 Mask", 800.00,"N-95 Mask Description"));
+            productService.save(new Product(2L, "PPE Kit", 2000.00,"PPE Kit Description"));
+            productService.save(new Product(3L, "Washable Mask", 100.00,"Washable Mask description"));
+            productService.save(new Product(4L, "Sanitizer", 150.00,"Sanitizer Description"));
+            productService.save(new Product(5L, "Handwash", 100.00,"Handwash Description"));
             
         };
     }
